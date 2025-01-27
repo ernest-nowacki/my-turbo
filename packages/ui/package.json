@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./utils": "./src/utils/index.ts",
+    "./add": "./src/utils/add.ts",
+    "./sub": "./src/utils/sub.ts",
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx"

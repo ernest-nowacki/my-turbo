@@ -1,5 +1,6 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
+import { add } from "@repo/ui/add";
 import styles from "./page.module.css";
 
 type Props = Omit<ImageProps, "src"> & {
@@ -36,6 +37,7 @@ export default function Home() {
             Get started by editing <code>apps/web/app/page.tsx</code>
           </li>
           <li>Save and see your changes instantly.</li>
+          <li>Add result: {add(1)}</li>
         </ol>
 
         <div className={styles.ctas}>
