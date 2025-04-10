@@ -5,10 +5,10 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   experimental: {
     optimizePackageImports: ["@repo/ui"],
-    turbo: {
-      treeShaking: true,
-      moduleIdStrategy: "deterministic",
-    },
+  },
+  turbopack: {
+    treeShaking: true,
+    moduleIds: "deterministic",
   },
   compiler: {
     removeConsole: true,
